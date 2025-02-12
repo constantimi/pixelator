@@ -2,6 +2,8 @@
 
 Pixelator is a simple web application built with Next.js and TypeScript that allows you to pixelate images directly in your browser.
 
+![pixelator](https://github.com/user-attachments/assets/350b05d9-7707-43e1-b92e-6f128fdefad3)
+
 ## Features
 
 -   Upload any image for pixelation
