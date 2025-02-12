@@ -1,8 +1,8 @@
-export function pixelateImage(
+export const pixelateImage = (
     img: HTMLImageElement,
     pixelSize: number,
     canvas: HTMLCanvasElement
-) {
+) => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
@@ -22,4 +22,4 @@ export function pixelateImage(
             ctx.fillRect(x, y, pixelSize, pixelSize);
         }
     }
-}
+};

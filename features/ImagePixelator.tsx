@@ -4,7 +4,6 @@ import type React from 'react';
 import { useState, useRef, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import FileSaver from 'file-saver';
-import { ThemeSwitcher } from './theme-switcher';
 
 const pixelSizes = [4, 8, 16, 32, 64];
 
@@ -97,10 +96,7 @@ const ImagePixelator: React.FC = () => {
     };
 
     return (
-        <div className='flex min-h-screen flex-col items-center justify-center p-4 bg-background text-foreground'>
-            <div className='fixed top-4 right-4 z-50'>
-                <ThemeSwitcher />
-            </div>
+        <div className='flex flex-col items-center justify-center p-4 bg-background text-foreground'>
             <div className='w-full max-w-md flex flex-col items-center gap-6'>
                 <input
                     type='file'
